@@ -31,5 +31,6 @@ public class Protagonist extends Character{
 	defense = 40;
 	attackrating = 0.4; 
     }
+
     
 }
