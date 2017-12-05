@@ -1,38 +1,25 @@
-public class Protagonist {
-    private String name;
-    private int hp;
-    private int strength;
-    private int defense;
-    private double attackrating;
+public class Protagonist extends Character{
+
+    public String name;
 
     public Protagonist(String nameIn) {
 	name = nameIn;
 	hp = 125;
-	strength = 100;
+	strength = (int)(Math.random() * 45 + 20);
 	defense = 40;
 	attackrating = 0.4;
     }
 
-    public boolean isAlive() {
-        return hp > 0;
-    }
-
-    public int getDefense() {
-	return defense;
+    public Protagonist(String nameIn, int hpIn, int strIn, int defIn, int attackIn) {
+	name = nameIn;
+	hp = hpIn;
+	strength = strIn;
+	defense = defIn;
+	attackrating = attackIn;
     }
 
     public String getName() {
 	return name;
-    }
-
-    public void lowerHP(int lower) {
-	hp -= lower;
-    }
-
-    public int attack(Monster monster) {
-	int damage = (int)(strength * attackrating) - monster.getDefense();
-	monster.lowerHP(damage);
-	return damage;
     }
 
     public void specialize() {
@@ -44,4 +31,5 @@ public class Protagonist {
 	defense = 40;
 	attackrating = 0.4; 
     }
+
 }
