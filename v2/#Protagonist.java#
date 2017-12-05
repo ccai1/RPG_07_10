@@ -18,15 +18,6 @@ public class Protagonist extends Character{
 	attackrating = attackIn;
     }
 
-    public String toString() {
-	return
-	    "Name: " + name + System.lineSeparator() +
-	    "hp: " + hp + System.lineSeparator() +
-	    "strength: " + strength + System.lineSeparator() +
-	    "defense: " + defense + System.lineSeparator() +
-	    "attack: " + attackrating;							     
-    }
-
     public String getName() {
 	return name;
     }
@@ -40,5 +31,5 @@ public class Protagonist extends Character{
 	defense = 40;
 	attackrating = 0.4; 
     }
-
+    
 }
