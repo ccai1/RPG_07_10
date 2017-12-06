@@ -1,4 +1,6 @@
 public class Monster extends Character{
+
+    public String name;
     
     public Monster() {
         hp = 125;
@@ -7,7 +9,13 @@ public class Monster extends Character{
         attackrating = 0.4;
     }
 
-    public Monster(int hpIn, int strIn, int defIn, int attackIn) {
+    public Monster(String nameIn) {
+	this();
+	name = nameIn;
+    }
+
+    public Monster(String nameIn, int hpIn, int strIn, int defIn, int attackIn) {
+	name = nameIn;
 	hp = hpIn;
 	strength = strIn;
 	defense = defIn;
@@ -16,6 +24,7 @@ public class Monster extends Character{
 
     public String toString() {
 	return
+	    "name: " + name + System.lineSeparator() +
 	    "hp: " + hp + System.lineSeparator() +
 	    "strength: " + strength + System.lineSeparator() +
 	    "defense: " + defense + System.lineSeparator() +

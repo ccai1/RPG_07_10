@@ -10,4 +10,13 @@ public class Vampire extends Monster {
 	    super(nameIn, hpIn, strIn, defIn, attackIn);
     }
 
+    public String toString() {
+	return
+	"Name: " + name + System.lineSeparator() +
+	"hp: " + hp + System.lineSeparator() +
+	"strength: " + strength + System.lineSeparator() +
+	"defense: " + defense + System.lineSeparator() +
+	"attack: " + attackrating;	
+    }
+
 }
