@@ -74,7 +74,8 @@ public class YoRPG
 
     //instantiate the player's character
     pat = new Protagonist();
-    characterType(name);
+    characterType(name)
+    monsterType(name);
 
   }//end newGame()
 
@@ -169,7 +170,6 @@ public class YoRPG
   }//end main
 
 public void characterType(String name) {
-
     Scanner sc = new Scanner(System.in);
     System.out.print ("Your character type: ");
     String character = sc.next();
@@ -189,6 +189,28 @@ public void characterType(String name) {
     else {
         pat = new Protagonist(name);
     }
+  }
+
+public void monsterType(String name) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print ("Your character type: ");
+    String character = sc.next();
+    
+    if (monster.equals("cyclops")) {
+        pat = new Cyclops(name);
     }
 
+    else if (monster.equals("vampire")) {
+        pat = new Vampire(name);
+    }
+
+    else if (monster.equals("witch")) {
+        pat = new Witch(name);
+    }
+
+    else {
+        pat = new Monster(name);
+    }
+  }
+	
 }//end class YoRPG
