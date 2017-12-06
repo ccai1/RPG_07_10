@@ -1,4 +1,4 @@
-public class Cyclops extends Protagonist {
+public class Cyclops extends Monster {
 
     public Cyclops(String nameIn) {
 	    super(nameIn);
