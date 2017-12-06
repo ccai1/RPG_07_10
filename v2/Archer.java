@@ -7,10 +7,6 @@ public class Archer extends Protagonist {
     }
 
     public Archer(String nameIn, int hpIn, int strIn, int defIn, int attackIn) {
-	name = nameIn;
-	hp = hpIn;
-	strength = strIn;
-	defense = defIn;
-	attackrating = attackIn;
+	super(nameIn, hpIn, strIn, defIn, attackIn);
     }
 }

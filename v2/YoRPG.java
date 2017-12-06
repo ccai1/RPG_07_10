@@ -73,7 +73,8 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    pat = new Protagonist();
+    characterType(name);
 
   }//end newGame()
 
@@ -166,5 +167,28 @@ public class YoRPG
 
     System.out.println( "Thy game doth be over." );
   }//end main
+
+public void characterType(String name) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print ("Your character type: ");
+    String character = sc.next();
+    
+    if (character.equals("archer")) {
+        pat = new Archer(name);
+    }
+
+    else if (character.equals("mage")) {
+        pat = new Mage(name);
+    }
+
+    else if (character.equals("knight")) {
+        pat = new Knight(name);
+    }
+
+    else {
+        pat = new Protagonist(name);
+    }
+    }
 
 }//end class YoRPG
