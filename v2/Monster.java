@@ -1,6 +1,6 @@
 public class Monster extends Character{
 
-    public String name;
+    protected String name;
     
     public Monster() {
         hp = 125;

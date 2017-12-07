@@ -1,5 +1,11 @@
 public class Archer extends Protagonist {
 
+    public Archer() {
+	super();
+	hp = 250;
+	defense = 80;
+    }
+
     public Archer(String nameIn) {
 	super(nameIn);
 	hp = 250;

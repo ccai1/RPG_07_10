@@ -1,6 +1,6 @@
 public class Protagonist extends Character{
 
-    public String name;
+    protected String name;
 
     public Protagonist() {
 	hp = 125;
@@ -38,7 +38,7 @@ public class Protagonist extends Character{
 
     public String toString() {
 	return
-	    "name: " + name + System.lineSeparator() +
+	    "Name: " + name + System.lineSeparator() +
 	    "hp: " + hp + System.lineSeparator() +
 	    "strength: " + strength + System.lineSeparator() +
 	    "defense: " + defense + System.lineSeparator() +
