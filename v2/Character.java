@@ -1,9 +1,9 @@
 public class Character {
 
-    public int hp;
-    public int strength;
-    public int defense;
-    public double attackrating;
+    protected int hp;
+    protected int strength;
+    protected int defense;
+    protected double attackrating;
 
     public boolean isAlive() {
         return hp > 0;

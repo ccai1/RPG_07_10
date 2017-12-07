@@ -1,8 +1,14 @@
 public class Cyclops extends Monster {
 
+    public Cyclops() {
+	super();
+	hp = 250;
+	attackrating = 0.8;
+    }
+
     public Cyclops(String nameIn) {
 	    super(nameIn);
-      hp = 250;
+	    hp = 250;
 	    attackrating = 0.8;
     }
 

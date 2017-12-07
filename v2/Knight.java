@@ -1,5 +1,11 @@
 public class Knight extends Protagonist {
 
+    public Knight() {
+	super();
+	hp = 250;
+	strength = (int)(Math.random() * 90 + 20);
+    }
+
     public Knight(String nameIn) {
         super(nameIn);
 	hp = 250;
