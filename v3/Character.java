@@ -28,4 +28,5 @@ public class Character {
 	monster.lowerHP(damage);
 	return damage;
     }
+    protected String stats(){return this.stats();}
 }

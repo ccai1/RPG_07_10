@@ -1,28 +1,27 @@
+
 public class Cyclops extends Monster {
 
     public Cyclops() {
-	super();
-	hp = 250;
-	attackrating = 0.8;
+        super();
+        hp = 250;
+        attackrating = 0.8;
+                race = "Cyclops";
     }
 
     public Cyclops(String nameIn) {
-	    super(nameIn);
-	    hp = 250;
-	    attackrating = 0.8;
+        super(nameIn);
+        hp = 250;
+        race = "Cyclops";
+        attackrating = 0.8;
     }
 
     public Cyclops(String nameIn, int hpIn, int strIn, int defIn, int attackIn) {
         super(nameIn, hpIn, strIn, defIn, attackIn);
+    race = "Cyclops";
     }
 
     public String toString() {
-	return
-	"Name: " + name + System.lineSeparator() +
-	"hp: " + hp + System.lineSeparator() +
-	"strength: " + strength + System.lineSeparator() +
-	"defense: " + defense + System.lineSeparator() +
-	"attack: " + attackrating;	
+        return "This is a Cyclop named " + name + ".";
     }
 
 }

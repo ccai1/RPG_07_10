@@ -7,18 +7,17 @@ public class UserOfRPGv3 {
 
 	//I think I am doing this wrong, but there is no error?
 	Character[] agents = new Character[]
-	    {new Monster("m1"), new Monster("m2"), new Monster("m3")};
+	    {new Cyclops("Cyclop"), new Vampire("Vlad"), new Witch("Wicked"), new Archer("Robinhood"),
+            new Knight("Shovel"), new Mage("Fire")};
 
-	System.out.println("CHARACTERISTICS:");
+	System.out.println("List of Characters:");
 	for (Character agent: agents) {
-	    System.out.println (agent + System.lineSeparator());
+	    System.out.println (agent);
+            System.out.println(agent.stats());
 	}
 
 	//error: cannot find symbol
-        System.out.println("GETTING NAME");
-	for (Character agent: agents) {
-	    System.out.println (agent);
-	}
+
 
 	/*
 	  error: cannot find symbol
@@ -27,6 +26,5 @@ public class UserOfRPGv3 {
 	  symbol:   method getName()
 	  location: variable agent of type Character
 	*/
-	
     }
 }

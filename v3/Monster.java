@@ -1,6 +1,7 @@
 public class Monster extends Character{
 
     protected String name;
+    protected String race;
     
     public Monster() {
         hp = 125;
@@ -29,6 +30,12 @@ public class Monster extends Character{
 	    "strength: " + strength + System.lineSeparator() +
 	    "defense: " + defense + System.lineSeparator() +
 	    "attack: " + attackrating;							     
+    }
+                    protected String stats() {
+        return name + System.lineSeparator() 
+               + race + System.lineSeparator()
+               + hp + System.lineSeparator()
+               + strength;
     }
     
 }

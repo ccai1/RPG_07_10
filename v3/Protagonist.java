@@ -1,6 +1,7 @@
 public abstract class Protagonist extends Character {
 
     protected String name;
+    protected String role;
 
     public Protagonist() {
 	hp = 125;
@@ -50,5 +51,11 @@ public abstract class Protagonist extends Character {
 	    "defense: " + defense + System.lineSeparator() +
 	    "attack: " + attackrating;						 
 	*/
+                public String stats() {
+        return name + System.lineSeparator() 
+               + role + System.lineSeparator()
+               + hp + System.lineSeparator()
+               + strength;
+    }
     
 }
