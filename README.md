@@ -9,9 +9,16 @@ General Monster toString format:
 
   This is a (Monster type) named (Monster name).
 
-General Character Stats() format:
+General Protagonist Stats() format:
   name
+  role
   hp
   str
   (other field not implemented, because I'm a staunch DnD player, I'm not buying simple JRPG damage evaluation system.)
+  
+General Protagonist Stats() format:
+  name
+  race
+  hp
+  str
   
