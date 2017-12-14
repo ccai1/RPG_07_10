@@ -8,3 +8,12 @@ idk how video games work so i randomly added field values
 just change some of the numbers around
 
 most of the changes are on the protagonist_subclasses branch BTW
+
+General Protagonist toString(?) format:
+
+Hello, ?. You are a (class name).
+
+General Monster toString format:
+
+This is a (Monster type) named (Monster name).
+
